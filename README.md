@@ -1,131 +1,109 @@
-<p align="center">
-   <img src="https://raw.githubusercontent.com/camelot-dev/excalibur/master/docs/_static/excalibur-logo.png" width="200">
+<div class="Box-sc-g0xbh4-0 QkQOb js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="center" dir="auto">
+   <a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/camelot-dev/excalibur/master/docs/_static/excalibur-logo.png"><img src="https://raw.githubusercontent.com/camelot-dev/excalibur/master/docs/_static/excalibur-logo.png" width="200" style="max-width: 100%;"></a>
 </p>
-
-# Excalibur: A web interface to extract tabular data from PDFs
-
-[![Documentation Status](https://readthedocs.org/projects/excalibur-py/badge/?version=master)](https://excalibur-py.readthedocs.io/en/master/) [![image](https://img.shields.io/pypi/v/excalibur-py.svg)](https://pypi.org/project/excalibur-py/) [![image](https://img.shields.io/pypi/l/excalibur-py.svg)](https://pypi.org/project/excalibur-py/) [![image](https://img.shields.io/pypi/pyversions/excalibur-py.svg)](https://pypi.org/project/excalibur-py/) [![Gitter chat](https://badges.gitter.im/camelot-dev/Lobby.png)](https://gitter.im/camelot-dev/Lobby) [![image](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black) [![image](https://img.shields.io/badge/continous%20quality-deepsource-lightgrey)](https://deepsource.io/gh/camelot-dev/excalibur/?ref=repository-badge)
-
-**Excalibur** is a web interface to extract tabular data from PDFs, written in **Python 3**! It is powered by [Camelot](https://camelot-py.readthedocs.io/).
-
-**Note:** Excalibur only works with text-based PDFs and not scanned documents. (As Tabula [explains](https://github.com/tabulapdf/tabula#why-tabula), "If you can click and drag to select text in your table in a PDF viewer, then your PDF is text-based".)
-
-## Using Excalibur
-
-**Note:** You need to [install ghostscript](https://camelot-py.readthedocs.io/en/master/user/install-deps.html) before moving forward.
-
-After [installing Excalibur with pip](https://excalibur-py.readthedocs.io/en/master/user/install.html), you need to initialize the metadata database using:
-
-<pre>
-$ excalibur initdb
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="134100824" _msthash="290">Excalibur：用于从 PDF 中提取表格数据的 Web 界面</h1><a id="user-content-excalibur-a-web-interface-to-extract-tabular-data-from-pdfs" class="anchor" aria-label="永久链接：Excalibur：用于从 PDF 中提取表格数据的 Web 界面" href="#excalibur-a-web-interface-to-extract-tabular-data-from-pdfs" _mstaria-label="3003104" _msthash="291"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://excalibur-py.readthedocs.io/en/master/" rel="nofollow"><img src="https://camo.githubusercontent.com/a9b179c0cbb8af4fa07d0ffb4416a11fac7c21f988cce3db1f18b0501b57ee9b/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f657863616c696275722d70792f62616467652f3f76657273696f6e3d6d6173746572" alt="文档状态" data-canonical-src="https://readthedocs.org/projects/excalibur-py/badge/?version=master" style="max-width: 100%;" _mstalt="424515" _msthash="292"></a> <a href="https://pypi.org/project/excalibur-py/" rel="nofollow"><img src="https://camo.githubusercontent.com/7faf7dc27456e06d3ea29317f8a0f398031a9029d3893213af408f7d63577d73/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f657863616c696275722d70792e737667" alt="图像" data-canonical-src="https://img.shields.io/pypi/v/excalibur-py.svg" style="max-width: 100%;" _mstalt="60073" _msthash="293"></a> <a href="https://pypi.org/project/excalibur-py/" rel="nofollow"><img src="https://camo.githubusercontent.com/f5c50ec37e938c2dbfe1172436ff961dbe10ff26fcc8dd0d2348b70f6aa98656/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f657863616c696275722d70792e737667" alt="图像" data-canonical-src="https://img.shields.io/pypi/l/excalibur-py.svg" style="max-width: 100%;" _mstalt="60073" _msthash="294"></a> <a href="https://pypi.org/project/excalibur-py/" rel="nofollow"><img src="https://camo.githubusercontent.com/a09986674e5bf3c40f45f2fad8fe7fd21fd9dcd279c3de31a52d4da6de92e4e9/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f657863616c696275722d70792e737667" alt="图像" data-canonical-src="https://img.shields.io/pypi/pyversions/excalibur-py.svg" style="max-width: 100%;" _mstalt="60073" _msthash="295"></a> <a href="https://gitter.im/camelot-dev/Lobby" rel="nofollow"><img src="https://camo.githubusercontent.com/5cf81fa80995ea959be1d42ed268a6874ea0e1474820c597ce8ac237707ab5b8/68747470733a2f2f6261646765732e6769747465722e696d2f63616d656c6f742d6465762f4c6f6262792e706e67" alt="Gitter 聊天" data-canonical-src="https://badges.gitter.im/camelot-dev/Lobby.png" style="max-width: 100%;" _mstalt="156962" _msthash="296"></a> <a href="https://github.com/ambv/black"><img src="https://camo.githubusercontent.com/5bf9e9fa18966df7cb5fac7715bef6b72df15e01a6efa9d616c83f9fcb527fe2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667" alt="图像" data-canonical-src="https://img.shields.io/badge/code%20style-black-000000.svg" style="max-width: 100%;" _mstalt="60073" _msthash="297"></a> <a href="https://deepsource.io/gh/camelot-dev/excalibur/?ref=repository-badge" rel="nofollow"><img src="https://camo.githubusercontent.com/f30d1d2b7429bf5d0563c57388fbfc058d12c8cbee15b45bd19b15bc802e7acd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e74696e6f75732532307175616c6974792d64656570736f757263652d6c6967687467726579" alt="图像" data-canonical-src="https://img.shields.io/badge/continous%20quality-deepsource-lightgrey" style="max-width: 100%;" _mstalt="60073" _msthash="298"></a></p>
+<p dir="auto" _msttexthash="403373477" _msthash="299"><strong _istranslated="1">Excalibur</strong> 是一个 Web 界面，用于从 PDF 中提取表格数据，用 <strong _istranslated="1">Python 3</strong> 编写！它由 <a href="https://camelot-py.readthedocs.io/" rel="nofollow" _istranslated="1">Camelot</a> 提供支持。</p>
+<p dir="auto" _msttexthash="1458046980" _msthash="300"><strong _istranslated="1">注意：</strong>Excalibur 仅适用于基于文本的 PDF，而不适用于扫描的文档。（正如 Tabula <a href="https://github.com/tabulapdf/tabula#why-tabula" _istranslated="1">所解释</a>的那样，“如果您可以在 PDF 查看器中单击并拖动以选择表格中的文本，则您的 PDF 是基于文本的”。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5130073" _msthash="301">使用 Excalibur</h2><a id="user-content-using-excalibur" class="anchor" aria-label="永久链接：使用 Excalibur" href="#using-excalibur" _mstaria-label="590681" _msthash="302"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="139525165" _msthash="303"><strong _istranslated="1">注意：</strong>您需要<a href="https://camelot-py.readthedocs.io/en/master/user/install-deps.html" rel="nofollow" _istranslated="1">先安装 ghostscript</a>，然后才能继续。</p>
+<p dir="auto" _msttexthash="273229736" _msthash="304"><a href="https://excalibur-py.readthedocs.io/en/master/user/install.html" rel="nofollow" _istranslated="1">使用 pip 安装 Excalibur</a> 后，您需要使用以下方式初始化元数据数据库：</p>
+<pre>$ excalibur initdb
 </pre>
-
-And then start the webserver using:
-
-<pre>
-$ excalibur webserver
+<p dir="auto" _msttexthash="71648564" _msthash="305">然后使用以下命令启动 Web 服务器：</p>
+<pre>$ excalibur webserver
 </pre>
-
-That's it! Now you can go to http://localhost:5000 and start extracting tabular data from your PDFs.
-
-
-1. **Upload** a PDF and enter the page numbers you want to extract tables from.
-
-2. Go to each page and select the table by drawing a box around it. (You can choose to skip this step since Excalibur can automatically detect tables on its own. Click on "**Autodetect tables**" to see what Excalibur sees.)
-
-3. Choose a flavor (Lattice or Stream) from "**Advanced**".
-
-    a. **Lattice**: For tables formed with lines.
-
-    b. **Stream**: For tables formed with whitespaces.
-
-4. Click on "**View and download data**" to see the extracted tables.
-
-5. Select your favorite format (CSV/Excel/JSON/HTML) and click on "**Download**"!
-
-**Note:** You can also download executables for Windows and Linux from the [releases page](https://github.com/camelot-dev/excalibur/releases) and run them directly!
-
-![usage.gif](https://excalibur-py.readthedocs.io/en/master/_images/usage.gif)
-
-## Why Excalibur?
-
-- Extracting tables from PDFs is hard. A simple copy-and-paste from a PDF into an Excel doesn't preserve table structure. **Excalibur makes PDF table extraction very easy**, by automatically detecting tables in PDFs and letting you save them into CSVs and Excel files.
-- Excalibur uses [Camelot](https://camelot-py.readthedocs.io/) under the hood, which gives you additional settings to tweak table extraction and get the best results. You can see how it performs better than other open-source tools and libraries [in this comparison](https://github.com/socialcopsdev/camelot/wiki/Comparison-with-other-PDF-Table-Extraction-libraries-and-tools).
-- You can save table extraction [settings](https://excalibur-py.readthedocs.io/en/master/user/faq.html#faq) (like table areas) for a PDF once, and apply them on new PDFs to extract tables with similar structures.
-- You get complete control over your data. All file storage and processing happens on your own local or remote machine.
-- Excalibur can be configured with MySQL and Celery for parallel and distributed workloads. By default, sqlite and multiprocessing are used for sequential workloads.
-
-## Installation
-
-### Using pip
-
-After installing [ghostscript](https://www.ghostscript.com/), which is one of the requirements for Camelot (See [install instructions](https://camelot-py.readthedocs.io/en/master/user/install-deps.html)), you can simply use pip to install Excalibur:
-
-<pre>
-$ pip install excalibur-py
+<p dir="auto" _msttexthash="232416717" _msthash="306">就是这样！现在您可以转到 <a href="http://localhost:5000" rel="nofollow" _istranslated="1">http://localhost:5000</a> 并开始从 PDF 中提取表格数据。</p>
+<ol dir="auto">
+<li>
+<p dir="auto" _msttexthash="94782740" _msthash="307"><strong _istranslated="1">上传</strong> PDF 并输入要从中提取表格的页码。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="1005066738" _msthash="308">转到每个页面，并通过在表周围绘制一个框来选择表。（您可以选择跳过此步骤，因为 Excalibur 可以自行自动检测表。单击“<strong _istranslated="1">自动检测表</strong>”以查看 Excalibur 看到的内容。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="129261990" _msthash="309">从 “<strong _istranslated="1">Advanced</strong>” 中选择一个风格 （Lattice 或 Stream）。</p>
+<p dir="auto" _msttexthash="89460293" _msthash="310">a. <strong _istranslated="1">晶格</strong>：适用于由线条形成的表格。</p>
+<p dir="auto" _msttexthash="96447039" _msthash="311">b. <strong _istranslated="1">Stream</strong>：适用于由空格组成的表。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="86217469" _msthash="312">单击 “<strong _istranslated="1">View and download data</strong>” 查看提取的表。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="238517864" _msthash="313">选择您最喜欢的格式 （CSV/Excel/JSON/HTML），然后单击“<strong _istranslated="1">下载</strong>”！</p>
+</li>
+</ol>
+<p dir="auto" _msttexthash="347055553" _msthash="314"><strong _istranslated="1">注意：</strong>您还可以从<a href="https://github.com/camelot-dev/excalibur/releases" _istranslated="1">发布页面</a>下载适用于 Windows 和 Linux 的可执行文件并直接运行它们！</p>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8f581fbb974a773dbe71eee49a2b5059d360614b841c63ccdab50d6c0668cf81/68747470733a2f2f657863616c696275722d70792e72656164746865646f63732e696f2f656e2f6d61737465722f5f696d616765732f75736167652e676966" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/8f581fbb974a773dbe71eee49a2b5059d360614b841c63ccdab50d6c0668cf81/68747470733a2f2f657863616c696275722d70792e72656164746865646f63732e696f2f656e2f6d61737465722f5f696d616765732f75736167652e676966" alt="usage.gif" data-canonical-src="https://excalibur-py.readthedocs.io/en/master/_images/usage.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage" _mstalt="125372" _msthash="315"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="" _msthidden="4">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://camo.githubusercontent.com/8f581fbb974a773dbe71eee49a2b5059d360614b841c63ccdab50d6c0668cf81/68747470733a2f2f657863616c696275722d70792e72656164746865646f63732e696f2f656e2f6d61737465722f5f696d616765732f75736167652e676966" target="_blank" _msthidden="1">
+          
+        <span data-target="animated-image.imageContainer" _msthidden="1">
+            <img data-target="animated-image.replacedImage" alt="usage.gif" class="AnimatedImagePlayer-animatedImage" src="https://camo.githubusercontent.com/8f581fbb974a773dbe71eee49a2b5059d360614b841c63ccdab50d6c0668cf81/68747470733a2f2f657863616c696275722d70792e72656164746865646f63732e696f2f656e2f6d61737465722f5f696d616765732f75736167652e676966" _msthidden="A" _mstalt="125372" _msthash="316" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="807" height="396"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play usage.gif" hidden="" _msthidden="A" _mstaria-label="217191" _msthash="317"></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="" _msthidden="2">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play usage.gif" _msthidden="A" _mstaria-label="217191" _msthash="318">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="Open usage.gif in new window" class="AnimatedImagePlayer-button" href="https://camo.githubusercontent.com/8f581fbb974a773dbe71eee49a2b5059d360614b841c63ccdab50d6c0668cf81/68747470733a2f2f657863616c696275722d70792e72656164746865646f63732e696f2f656e2f6d61737465722f5f696d616765732f75736167652e676966" target="_blank" _msthidden="A" _mstaria-label="610103" _msthash="319">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="32703099" _msthash="320">为什么选择 Excalibur？</h2><a id="user-content-why-excalibur" class="anchor" aria-label="永久链接：为什么选择 Excalibur？" href="#why-excalibur" _mstaria-label="535431" _msthash="321"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="1430898196" _msthash="322">从 PDF 中提取表格很困难。从 PDF 到 Excel 中简单地复制并粘贴到 Excel 中不会保留表格结构。Excalibur 通过自动检测 PDF 中的表格并允许您将它们保存为 CSV 和 Excel 文件，<strong _istranslated="1">使 PDF 表格提取变得非常容易</strong>。</li>
+<li _msttexthash="977700399" _msthash="323">Excalibur 在后台使用 <a href="https://camelot-py.readthedocs.io/" rel="nofollow" _istranslated="1">Camelot</a>，这为您提供了额外的设置来调整表提取并获得最佳结果。<a href="https://github.com/socialcopsdev/camelot/wiki/Comparison-with-other-PDF-Table-Extraction-libraries-and-tools" _istranslated="1">在此比较中</a>，您可以看到它的性能优于其他开源工具和库。</li>
+<li _msttexthash="508363310" _msthash="324">您可以为 PDF 保存一次表格提取<a href="https://excalibur-py.readthedocs.io/en/master/user/faq.html#faq" rel="nofollow" _istranslated="1">设置</a>（如表格区域），然后将它们应用于新 PDF 以提取具有相似结构的表格。</li>
+<li _msttexthash="351305578" _msthash="325">您可以完全控制您的数据。所有文件存储和处理都在您自己的本地或远程计算机上进行。</li>
+<li _msttexthash="697667126" _msthash="326">Excalibur 可以与 MySQL 和 Celery 一起配置，用于并行和分布式工作负载。默认情况下，sqlite 和 multiprocessing 用于顺序工作负载。</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5773755" _msthash="327">安装</h2><a id="user-content-installation" class="anchor" aria-label="永久链接：安装" href="#installation" _mstaria-label="519259" _msthash="328"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5013879" _msthash="329">使用 pip</h3><a id="user-content-using-pip" class="anchor" aria-label="永久链接：使用 pip" href="#using-pip" _mstaria-label="373425" _msthash="330"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="540730099" _msthash="331">安装 <a href="https://www.ghostscript.com/" rel="nofollow" _istranslated="1">ghostscript</a> 后，这是 Camelot 的要求之一（参见<a href="https://camelot-py.readthedocs.io/en/master/user/install-deps.html" rel="nofollow" _istranslated="1">安装说明</a>），你可以简单地使用 pip 来安装 Excalibur：</p>
+<pre>$ pip install excalibur-py
 </pre>
-
-### From the source code
-
-After installing ghostscript, clone the repo using:
-
-<pre>
-$ git clone https://www.github.com/camelot-dev/excalibur
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11135995" _msthash="332">从源代码</h3><a id="user-content-from-the-source-code" class="anchor" aria-label="永久链接：从源代码" href="#from-the-source-code" _mstaria-label="730119" _msthash="333"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="149027658" _msthash="334">安装 ghostscript 后，使用以下命令克隆存储库：</p>
+<pre>$ git clone https://www.github.com/camelot-dev/excalibur
 </pre>
-
-and install Excalibur using pip:
-
-<pre>
-$ cd excalibur
+<p dir="auto" _msttexthash="38812462" _msthash="335">并使用 pip 安装 Excalibur：</p>
+<pre>$ cd excalibur
 $ pip install .
 </pre>
-
-## Documentation
-
-Fantastic documentation is available at [http://excalibur-py.readthedocs.io/](http://excalibur-py.readthedocs.io/).
-
-## Development
-
-The [Contributor's Guide](https://excalibur-py.readthedocs.io/en/master/dev/contributing.html) has detailed information about contributing code, documentation, tests and more. We've included some basic information in this README.
-
-### Source code
-
-You can check the latest sources with:
-
-<pre>
-$ git clone https://www.github.com/camelot-dev/excalibur
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5144373" _msthash="336">文档</h2><a id="user-content-documentation" class="anchor" aria-label="永久链接： 文档" href="#documentation" _mstaria-label="559767" _msthash="337"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="143610337" _msthash="338"><a href="http://excalibur-py.readthedocs.io/" rel="nofollow" _istranslated="1">http://excalibur-py.readthedocs.io/</a> 上提供了出色的文档。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4410835" _msthash="339">发展</h2><a id="user-content-development" class="anchor" aria-label="永久链接： 开发" href="#development" _mstaria-label="480220" _msthash="340"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="484699761" _msthash="341"><a href="https://excalibur-py.readthedocs.io/en/master/dev/contributing.html" rel="nofollow" _istranslated="1">Contributor's Guide</a> 包含有关贡献代码、文档、测试等的详细信息。我们在本 README 中包含了一些基本信息。</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="8270301" _msthash="342">源代码</h3><a id="user-content-source-code" class="anchor" aria-label="永久链接： 源代码" href="#source-code" _mstaria-label="436345" _msthash="343"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="90262601" _msthash="344">您可以通过以下方式检查最新来源：</p>
+<pre>$ git clone https://www.github.com/camelot-dev/excalibur
 </pre>
-
-### Setting up a development environment
-
-You can install the development dependencies easily, using pip:
-
-<pre>
-$ pip install excalibur-py[dev]
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20052721" _msthash="345">设置开发环境</h3><a id="user-content-setting-up-a-development-environment" class="anchor" aria-label="永久链接： 设置开发环境" href="#setting-up-a-development-environment" _mstaria-label="1612962" _msthash="346"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="99428784" _msthash="347">您可以使用 pip 轻松安装开发依赖项：</p>
+<pre>$ pip install excalibur-py[dev]
 </pre>
-
-### Testing (soon)
-
-After installation, you can run tests using:
-
-<pre>
-$ python setup.py test
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="39462761" _msthash="348">测试（即将推出）</h3><a id="user-content-testing-soon" class="anchor" aria-label="永久链接：测试（即将推出）" href="#testing-soon" _mstaria-label="520221" _msthash="349"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="116405341" _msthash="350">安装后，您可以使用以下方法运行测试：</p>
+<pre>$ python setup.py test
 </pre>
-
-## Versioning
-
-Excalibur uses [Semantic Versioning](https://semver.org/). For the available versions, see the tags on this repository. For the changelog, you can check out [HISTORY.md](https://github.com/camelot-dev/excalibur/blob/master/HISTORY.md).
-
-## License
-
-This project is licensed under the MIT License, see the [LICENSE](https://github.com/camelot-dev/excalibur/blob/master/LICENSE) file for details.
-
-## Support the development
-
-You can support our work on Excalibur with a one-time or monthly donation [on OpenCollective](https://opencollective.com/excalibur). Organizations who use Excalibur can also sponsor the project for an acknowledgement on [our official site](https://www.tryexcalibur.com/) and this README.
-
-Special thanks to all the users and organizations that support Excalibur!
-
-<a href="https://opencollective.com/excalibur/backer/0/website" target="_blank"><img src="https://opencollective.com/excalibur/backer/0/avatar.svg"></a>
-<a href="https://opencollective.com/excalibur/sponsor/0/website" target="_blank"><img src="https://opencollective.com/excalibur/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/excalibur/backer/1/website" target="_blank"><img src="https://opencollective.com/excalibur/backer/1/avatar.svg"></a>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11129911" _msthash="351">版本控制</h2><a id="user-content-versioning" class="anchor" aria-label="永久链接： 版本控制" href="#versioning" _mstaria-label="444028" _msthash="352"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="518667318" _msthash="353">Excalibur 使用<a href="https://semver.org/" rel="nofollow" _istranslated="1">语义版本控制</a>。有关可用版本，请参阅此存储库上的标签。有关更改日志，您可以查看 <a href="https://github.com/camelot-dev/excalibur/blob/master/HISTORY.md" _istranslated="1">HISTORY.md</a>。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="9675445" _msthash="354">许可证</h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license" _mstaria-label="331903" _msthash="355"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="105131546" _msthash="356">本项目采用 MIT License 授权，详见 <a href="https://github.com/camelot-dev/excalibur/blob/master/LICENSE" _istranslated="1">LICENSE</a> 文件。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="10627903" _msthash="357">支持开发</h2><a id="user-content-support-the-development" class="anchor" aria-label="永久链接： 支持开发" href="#support-the-development" _mstaria-label="945828" _msthash="358"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="1183367627" _msthash="359">您可以通过<a href="https://opencollective.com/excalibur" rel="nofollow" _istranslated="1">在 OpenCollective 上</a>进行一次性或每月捐款来支持我们在 Excalibur 上的工作。使用 Excalibur 的组织也可以赞助该项目，以便在<a href="https://www.tryexcalibur.com/" rel="nofollow" _istranslated="1">我们的官方网站</a>和本 README 上致谢。</p>
+<p dir="auto" _msttexthash="114176712" _msthash="360">特别感谢所有支持 Excalibur 的用户和组织！</p>
+<p dir="auto"><a href="https://opencollective.com/excalibur/backer/0/website" rel="nofollow"><img src="https://camo.githubusercontent.com/c9408067c08113ca6593c9c6cf273cf0cb2c4696812f741d7bf98bf7f8a514c1/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f657863616c696275722f6261636b65722f302f6176617461722e737667" data-canonical-src="https://opencollective.com/excalibur/backer/0/avatar.svg" style="max-width: 100%;"></a>
+<a href="https://opencollective.com/excalibur/sponsor/0/website" rel="nofollow"><img src="https://camo.githubusercontent.com/4365f7d0b9d43b1a9b4a371f3ba321ab788b8020c65298416ec5e858920cf675/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f657863616c696275722f73706f6e736f722f302f6176617461722e737667" data-canonical-src="https://opencollective.com/excalibur/sponsor/0/avatar.svg" style="max-width: 100%;"></a>
+<a href="https://opencollective.com/excalibur/backer/1/website" rel="nofollow"><img src="https://camo.githubusercontent.com/06fe671f4819f625755459bab79ada96efc9a219b9c02532fa38e83ee4957306/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f657863616c696275722f6261636b65722f312f6176617461722e737667" data-canonical-src="https://opencollective.com/excalibur/backer/1/avatar.svg" style="max-width: 100%;"></a></p>
+</article></div>
